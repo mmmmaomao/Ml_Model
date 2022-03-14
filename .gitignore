@@ -1,0 +1,7 @@
+/__pycache__
+/.idea
+/classifier_cifar10/
+/data/
+/output.tar
+/output
+/result

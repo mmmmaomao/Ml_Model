@@ -1,0 +1,17 @@
+DATA_CONFIG:
+  ROOT_PATH: "/home/w/PythonProjects/Ml_Model/data/cifar-10"
+
+OPTIMIZATION:
+  BATCH_SIZE: 4           # 普通训练和测试的batch_size
+  TASK_BATCH: 4           # 元学习的batch_size
+  TASK_NUMS: 1000         # 每轮元学习采样的小任务数量
+  INIT_LABELED_SIZE: 1000 # 初始标注数据集大小
+  SUPPORT_SIZE: 20        # 元学习小任务的支持集大小
+  QUERY_SIZE: 80          # 元学习小任务的查询集大小
+  META_LR: 0.001          # 元学习率
+  UPDATE_LR: 0.01         # 普通学习率
+  UPDATE_STEP: 5          # 元学习更新θ'的次数
+  ACTIVE_TRAIN_NUMS: 40   #  主动学习的轮数
+  PICK_NUMS: 500          # 主动学习每次选出的样本数量
+  META_TRAIN_EPOCHS: 1    # 元学习训练的epochs
+  EPOCHS: 1               # 普通学习的epochs
